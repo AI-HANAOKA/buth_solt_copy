@@ -1,0 +1,384 @@
+.vw {
+    width: 100vw;
+}
+
+/* sp */
+.flex-cen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-r {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.flex-l {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.flex-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pc , .component-top-pc {
+    display: none;
+}
+
+
+
+/* -----------------ここから---------------------- */
+
+body {
+    background-color: #FAF1C8;
+}
+
+
+
+/* -----------------header---------------------- */
+
+header {
+    background-image: url("../img/top_sp.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    position: relative;
+}
+header::after {
+    position: absolute;
+    content: "";
+    background-image: url("../img/top_bottom.png");
+    background-repeat: no-repeat;
+    background-position: cover;
+    background-size: 80vh;
+    width: 100%;
+    height: 24vh;
+    bottom: -18vh;
+    /* background-color: rgba(165, 42, 42, 0.219); */
+
+}
+
+.headre-all {
+    width: 95vw;
+    /* headerではなく.header-allに指定したことでアイテムがレイアウト通りの配置になった */
+    min-height: 124vw;
+}
+
+.logo-img {
+    width: 18vw;
+    margin-top: 10px;
+}
+
+.header-text-new > img {
+    width: 80vw;
+    position: relative;
+    top: -3vh;
+}
+
+.header-text-scent > img {
+    width: 75vw;
+    /* %指定で親要素内に留まって縮小になった */
+    margin-top: 65%;
+} 
+
+
+
+
+/* -----------------net shop---------------------- */
+.net-shop-all {
+    width: 90vw;
+    margin-top: 40px;
+}
+
+.net-shop-text-img {
+    width: 70vw;
+    padding: 25px;
+}
+
+.net-shop-text {
+    font-size: .7em;
+    text-align: center;
+    line-height: 1.8em;
+    padding-bottom: 25px;
+}
+
+.net-shop-price {
+    font-size: .2em;
+    padding-bottom: 20px;
+}
+
+.net-shop-button {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1rem;
+    text-align: center;
+    background-color: #004b4a;
+    padding: .9em 0;
+    width: 75vw;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.net-shop-button-img {
+    width: 75vw;
+    padding-bottom: 60px;
+}
+
+
+
+
+
+/* -----------------component---------------------- */
+.component {
+    width: 90vw;
+    /* background-color: darkcyan; */
+    background-image: url("../img/dot_to_sp.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+}
+.component::after {
+    position: absolute;
+    content: "";
+    display: block;
+    background-image: url("../img/img8.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 90vw;
+    height: 5vh;
+    /* vh指定で画像が動かなくなった */
+    bottom: -7vh;
+}
+
+.component-decoration {
+    width: 90vw;
+    background-image: url("../img/dot_sp.png");
+    background-size: 100%;
+    position: relative;
+    /* vh指定で画像が動かなくなった */
+    top: 7vw;
+}
+
+
+.component-top-sp-text-img , .component-top-sp-img , .component-top-tag {
+    width: 75vw;
+    padding-top: .5em;
+}
+
+.component-top-sp-img {
+    padding-top: 1em;
+}
+
+.citrus {
+    padding: 1.5em 0em;
+}
+
+.citrus-img {
+    width: 40vw;
+    margin-right: 10px;
+}
+
+.citrus-tag{
+    width: 35vw;
+}
+
+
+
+.citrus-text {
+    list-style: none;
+    margin-bottom: .4em;
+}
+
+.citrus-text > li {
+    color: #4BA200;
+    font-weight: bold;
+    font-size: .8em;
+    line-height: 1.5em;
+    background: url("../img/img6_check.png") left 0px top 3px no-repeat;;
+    background-size: 1.3em;
+    /* padding-leftでチェックアイテムが左に寄った */
+    padding-left: 20px;
+}
+
+
+
+
+/* -----------------usage---------------------- */
+.usage {
+    margin-top: 15vh;
+    background-color: #FFD800;
+    background-image: url("../img/back_graound_sp.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+}
+.usage::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/img16_top.png");
+    width: 100%;
+    height: 5vh;
+    top: -1vh;
+}
+
+.usage-decoration {
+    width: 90vw;
+    /* background-color: darkcyan; */
+}
+
+.usage-top-text-img {
+    padding-top: 7vh;
+    width: 70vw;
+}
+
+.bath > .sp {
+    width: 33vw;
+    position: relative;
+    z-index: 1;
+    top: -1vh;
+}
+
+.bath-time-img {
+    width: 62vw;
+    padding-top: 7vh;
+    position: relative;
+    right: 2vw;
+}
+
+.goods-img {
+    width: 50vw;
+    position: relative;
+    z-index: 1;
+    left: -10vw;
+    top: -5vh;
+}
+
+.bath-item > .sp {
+    width: 80vw;
+    position: relative;
+    top: -5vh;
+}
+
+.goods-button {
+    width: 75vw;
+    position: relative;
+    top: -2vh;
+    padding-bottom: 5vh;
+}
+
+
+
+
+/* -----------------shop---------------------- */
+.shop {
+    position: relative;
+
+}
+.shop::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 5vh;
+    /* background-color: rgba(184, 135, 11, 0.39); */
+    background-image: url("../img/top_bottom.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    top: -4vh;
+}
+
+.shop-all-item {
+    width: 90vw;
+    background-image: url("../img/back_graund2_sp.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    /* position指定で背景画像のborderがでてきた */
+    background-position: center bottom;
+    margin: 6vh 0 6vh;
+    /* padding-bottom: 1em; */
+    position: relative;
+}
+.shop-all-item::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/border_sp.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 5vh;
+    top: 0vh;
+}
+
+.shop-all-item > .sp {
+    padding-top: 4vh;
+    width: 65vw;
+} 
+
+.shop-title {
+    font-size: .8em;
+    padding-top: 3vh;
+}
+
+.shop-text {
+    font-size: .3em;
+    margin: 3vh 3vh 2vh;
+    line-height: 2.5vh;
+}
+
+.shop-attention {
+    font-size: .3em;
+    padding-bottom: 2.5vh;
+
+}
+
+.shop-button {
+    width: 70vw;
+    padding-bottom: 2.5vh;
+}
+
+
+
+
+/* -----------------footer---------------------- */
+.footer {
+    background-color: #ffd800;
+    position: relative;
+}
+.footer::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/img16.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 4vh;
+    top: -.2vh;
+}
+
+.footer-all-item {
+    width: 85vw;
+    padding: 5vh 0 2.5vh;
+    /* background-color: darkmagenta; */
+}
+
+.footer-tag {
+    width: 40vw;
+    padding: .2em .4em;
+}
+
+.footer-privacy {
+    font-size: .7em;
+    color: #000000;
+    padding-bottom: 3vh;
+}
+
+.footer-copyright {
+    font-size: 0.5em;
+    padding-bottom: 6vh;
+}

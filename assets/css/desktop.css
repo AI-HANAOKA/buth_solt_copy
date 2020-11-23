@@ -1,0 +1,424 @@
+.vw {
+    width: 100vw;
+}
+
+.pc-flex-cen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pc-flex-l {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.pc-flex-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sp , .component-top-sp {
+    display: none;
+}
+
+
+
+/* -----------------ここから---------------------- */
+
+body {
+    background-color: #FAF1C8;
+    margin: 0 auto;
+    /* min-width: 1200px; */
+}
+
+
+
+/* アイテムをブラウザサイズで変動させたくない場合はpx指定でoverflow: hidden;？ */
+/* デスクトップ版はアイテムに対してemを使わないほうがいいかも */
+/* -----------------header---------------------- */
+
+header {
+    background-image: url("../img/top_pc.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1700px;
+    position: relative;
+    min-height: 763px;
+    padding-top: 0vh;
+    overflow: hidden;
+}
+header::after {
+    position: absolute;
+    content: "";
+    background-image: url("../img/top_bottom.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    /* px指定でウインドウサイズが変わっても背景画像が動かなくなった */
+    background-size: 1700px;
+    width: 100%;
+    /* 高さ指定で下部固定になった */
+    height: 132vh;
+    bottom: -2vh;
+    overflow: hidden;
+}
+
+.headre-all{
+    /* widthをpx指定で背景画像が参考サイトと同じようになった */
+    width: 900px;
+    margin: 0 auto;
+    overflow: hidden;
+
+}
+
+.logo-img {
+    margin: 20px 0 0;
+    /* position: relative;
+    top: 0;
+    left: 0; */
+}
+
+.header-text-new > .pc {
+    width: 700px;
+    position: relative;
+    top: -1em;
+}
+
+.header-text-scent > img {
+    width: 400px;
+    padding-left: 20px;
+    padding-top: 100px;
+
+}
+
+
+
+
+/* -----------------net-shop---------------------- */
+.net-shop-all {
+    width: 650px;
+    /* background-color: rgba(25, 0, 255, 0.37); */
+}
+
+.net-shop-text-img {
+    width: 400px;
+    padding-top: 4vh;
+}
+
+.net-shop-text {
+    width: 100%;
+    padding-top: 3vh;
+    text-align: center;
+    line-height: 2em;
+}
+
+.net-shop-price {
+    font-size: 14px;
+    padding: 1.5em 0 2em;
+
+}
+
+.net-shop-button {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.4rem;
+    text-align: center;
+    background-color: #004b4a;
+    padding: .7em 0;
+    width: 350px;
+    border-radius: 10px;
+    margin: 1em 1.5em 2em;
+    position: relative;
+    transition: all ease-in .5s;
+}
+.net-shop-button:hover {
+    background-color: #376C63;
+}
+
+.net-shop-button-img {
+    width: 350px;
+    padding-bottom: 5em;
+    transition: all ease-in .5s;
+}
+
+
+
+
+
+/* -----------------component---------------------- */
+.component {
+    width: 800px;
+    /* background-color: darkcyan; */
+    background-image: url("../img/dot_top_pc.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+}
+.component::after {
+    position: absolute;
+    content: "";
+    display: block;
+    background-image: url("../img/download.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 800px;
+    height: 57px;
+    /* vh指定で画像が動かなくなった */
+    bottom: -90px;
+}
+
+.component-decoration {
+    width: 800px;
+    background-image: url("../img/dot1_pc.png");
+    background-size: 100%;
+    position: relative;
+    /* vh指定で画像が動かなくなった */
+    top: 35px;
+}
+
+.component-top-pc-text-img {
+    width: 650px;
+    padding-top: 2em;
+}
+
+.component-top-pc-img {
+    width: 600px;
+    padding-top: 2em;
+}
+
+.component-top-tag {
+    width: 450px;
+    padding-top: 1em;
+}
+
+/* colじゃなくて space-evenlyだった */
+.component-bottom {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.citrus {
+    padding: 20px 0 50px;
+    margin-right: 20px;
+}
+
+.citrus-img {
+    width: 250px;
+    margin-bottom: 10px;
+}
+
+.citrus-tag{
+    width: 200px;
+}
+
+
+
+.citrus-text {
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+.citrus-text > li {
+    color: #4BA200;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 1.5em;
+    background: url("../img/img6_check.png") left 0px top 3px no-repeat;;
+    background-size: 1.3em;
+    /* padding-leftでチェックアイテムが左に寄った */
+    padding-left: 20px;
+}
+
+
+
+/* -----------------usage---------------------- */
+.usage {
+    margin-top: 200px;
+    background-color: #FFD800;
+
+    position: relative;
+}
+.usage::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/img16_top.png");
+    background-size: 1700px;
+    width: 100vw;
+    height: 5vh;
+    top: -1vh;
+    overflow: hidden;
+}
+
+.usage-decoration {
+    width: 800px;
+    background-image: url("../img/back_graound_pc.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    /* background-color: darkcyan; */
+}
+
+.usage-top-text-img {
+    padding-top: 100px;
+    width: 400px;
+}
+
+.bath {
+    padding: 50px 0;
+}
+
+.bath > .pc {
+    width: 200px;
+    margin-right: 20px;
+}
+
+.bath-time-img {
+    width: 380px;
+}
+
+
+
+.bath-item {
+    padding-top: 50px;
+}
+
+.goods-img {
+    width: 300px;
+    position: relative;
+    right: 5em;
+    top: -2em;
+}
+
+.bath-item > .pc {
+    width: 600px;
+    position: relative;
+    top: -7em;
+    left: 3em;
+}
+
+.goods-button {
+    width: 350px;
+    padding-bottom: 150px;
+}
+
+
+
+
+
+
+/* -----------------shop---------------------- */
+.shop {
+    position: relative;
+
+}
+.shop::before {
+    position: absolute;
+    content: "";
+    height: 120px;
+    /* background-color: rgba(184, 135, 11, 0.39); */
+    background-image: url("../img/top_bottom.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 1500px;
+    width: 100vw;
+    top: -120px;
+    overflow: hidden;
+}
+
+.shop-all-item {
+    width: 900px;
+    background-image: url("../img/back_graund2_pc.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    /* position指定で背景画像のborderがでてきた */
+    background-position: center bottom;
+    margin: 50px 0 ;
+    /* padding-bottom: 1em; */
+    position: relative;
+}
+.shop-all-item::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/border_pc.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 50px;
+    top: 0px;
+}
+
+.shop-all-item > .pc {
+    padding-top: 40px;
+    width: 700px;
+} 
+
+.shop-title {
+    font-size: 20px;
+    color: #545454;
+    font-weight: bold;
+    padding: 30px 0 20px;
+}
+
+.shop-text {
+    font-size: 14px;
+    padding-bottom: 10px;
+    line-height: 25px;
+    text-align: center;
+}
+
+.shop-attention {
+    font-size: 12px;
+    padding-bottom: 50px;
+
+}
+
+.shop-button {
+    width: 350px;
+    padding-bottom: 30px;
+}
+
+
+
+
+
+/* -----------------footer---------------------- */
+.footer {
+    background-color: #ffd800;
+    position: relative;
+}
+.footer::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/img16.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 4vh;
+    top: -.2vh;
+}
+
+.footer-all-item {
+    width: 800px;
+    padding: 70px 0 0;
+    /* background-color: darkmagenta; */
+}
+
+.footer-tag {
+    width: 230px;
+    padding: 0 10px;
+}
+
+.footer-privacy {
+    font-size: 15px;
+    color: #000000;
+    padding: 20px;
+}
+
+.footer-copyright {
+    font-size: 12px;
+    padding-bottom: 50px;
+}
